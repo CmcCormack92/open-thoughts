@@ -2,30 +2,51 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
+.welcome {
+  color: rgb(51, 31, 1);
+}
+
 body, html {
   height: 100%;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: rgb(51, 31, 1);
+  background-color: rgb(172, 226, 198);
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: rgb(172, 226, 198);
+  font-weight: bold;
+  transition: color .1s;
+  margin: 0px 15px;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+
+h1 a {
+  text-decoration: none;
+  color: rgb(51, 31, 1);
   font-weight: bold;
   transition: color .1s;
 }
 
-a:hover {
-  color: #3486eb;
+h1 a:hover {
+  color: rgba(51, 31, 1, 0.5);
 }
 
 button {
-  background-color: #225ca3;
+  background-color: rgb(51, 31, 1);
   border: 0;
   padding: 1%;
-  color: white;
+  color: rgb(172, 226, 198);
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -33,7 +54,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: rgba(51, 31, 1, 0.5);
 }
 
 .post-list {
@@ -49,7 +70,7 @@ textarea, input {
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 1px solid rgb(51, 31, 1);
 }
 
 textarea {
@@ -75,15 +96,33 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background-color: rgb(51, 31, 1);
+}
+
+.h1-wrapper {
+  background-color: rgb(172, 226, 198);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgb(218, 233, 225);
+  border: 1px solid rgb(167, 202, 183);
+  margin: 30px 20px;
+}
+
+header nav {
+  color:rgb(172, 226, 198);
 }
 
 header h1 {
-  font-size: 1em;
+  color:rgb(51, 31, 1);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 main {
@@ -97,16 +136,16 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
   margin-left: 16px;
+  color: rgb(172, 226, 198);
 }
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: whitesmoke;
 }
 
 .delete-post-btn {
@@ -125,21 +164,17 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  color: rgb(51, 31, 1);
 }
 
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
+  color: white;
 }
 
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
+.edit-link:hover {
+  opacity: .5;
 }
 
 .comment-form {
@@ -151,18 +186,81 @@ main {
   margin-bottom: 1%;
 }
 
+#comment-name {
+  color: white;
+}
+
+#comment-name:hover {
+  opacity: .5;
+}
+
 .comment:nth-child(odd) {
   background-color: #fff5eb;
 }
 
-.comment .meta {
+.meta {
   font-size: 90%;
   margin-bottom: .5%;
-  opacity: .6;
+  opacity: .7;
+  font-weight: normal;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-wrapper {
+  border: 3px solid rgb(51, 31, 1);
+  min-height: 125px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.post-wrapper p {
+  color: rgb(51, 31, 1);
+  margin: 10px 15px;
+}
+
+.postTitle-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgb(51, 31, 1);
+  width: 100%;
+}
+
+.postTitle-wrapper h3 a {
+  color: rgb(172, 226, 198);
+}
+
+.postTitle-wrapper div {
+  color: rgb(172, 226, 198);
+}
+
+.postTitle-wrapper h3 a:hover {
+  color: whitesmoke;
+}
+
+.comments-area:hover {
+  color: rgba(128, 128, 128, 0.3);
 }
 
 .new-post-form input {
   width: 300px;
+}
+
+#post-content {
+  width: 600px;
+  min-height: 250px;
+}
+
+.user-name {
+  margin-bottom: 20px;
+}
+
+.user-name span {
+  font-weight: bold;
+  font-size: larger;
 }
 
 .edit-post-form {
@@ -170,9 +268,11 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  background-color: rgb(51, 31, 1);
   display: flex;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+  font-weight: bold;
+  color: rgb(172, 226, 198);
 }
