@@ -27,7 +27,7 @@
   This project was created uning the MIT License
  
 
-  [MIT License](https://choosealicense.com/licenses/mit/)
+  [MIT License](https://git.heroku.com/open-thoughts.git)
 
 
   ## Contributing
