@@ -5,7 +5,7 @@
   This website is a space for free thinkers to come and post thoughts about anything. Other users are free to leave comments on each of the posts. Signing up for a membership is free and perks such as commenting on other user post's are limited to members.
 
   ## Deployed Application
-  [Open Thoughts](https://warm-retreat-57367.herokuapp.com/)
+  [Open Thoughts](https://open-thoughts.herokuapp.com/login)
   
   ## Screenshot
   <img width="1439" alt="Screen Shot 2022-01-30 at 3 49 36 PM" src="https://user-images.githubusercontent.com/86354138/151717300-c385e1ab-a37c-4563-8c39-d04c7a6c3645.png">
